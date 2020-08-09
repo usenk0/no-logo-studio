@@ -1,0 +1,12 @@
+@media (max-width: 1199px){
+    .header{
+        &-bottom--menu{
+            ul{
+                display: none;
+            }
+            .hamburger{
+                display: block;
+            }
+        }
+    }
+}

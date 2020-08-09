@@ -1,0 +1,24 @@
+block header
+	header.header
+		.header-top
+			nav.header-top--menu
+				ul.js-topMenu
+					- for (var i = 0; i < 10; ++i) {
+						li
+							a(href="/")= 'menu ' + i
+					- }
+		.header-bottom
+			nav.header-bottom--menu
+				ul
+					- for (var i = 0; i < 10; ++i) {
+						li
+							a(href="/")= 'menu ' + i
+							ul
+								- for (var i = 0; i < 10; ++i) {
+									li
+										a(href="/")= 'menu ' + i
+								- }
+					- }
+				.hamburger.hamburger--slider.js-hamburger
+					.hamburger-box
+						.hamburger-inner
